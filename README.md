@@ -3,11 +3,11 @@
 This repository contains a state-of-the-art **Topological Deep Learning (TDL)** predictive pipeline designed to model sensory habituation in infants. By combining dynamical systems theory, algebraic topology, and temporal self-attention networks, the architecture reconstructs the joint phase space of physiological signals to predict whether a sensory stimulus will be accepted or rejected—specifically, the cognitive milestone **"lo_consume" (Yes/No)** from clinical trials.
 
 The pipeline is fully implemented, mathematically documented, and end-to-end verified in the Jupyter Notebook:
-👉 [sensory_habituation_tdl.ipynb](sensory_habituation_tdl.ipynb)
+[sensory_habituation_tdl.ipynb](sensory_habituation_tdl.ipynb)
 
 ---
 
-## 📊 Project Scientific Architecture
+## Project Scientific Architecture
 
 Sensory habituation is modeled as a trajectory in a multi-dimensional dynamical system. The pipeline transitions from sparse clinical data checkpoints to high-frequency simulated manifolds, extracts topological signatures of stress, and classifies the resulting sequence using a custom Transformer network.
 
@@ -49,7 +49,7 @@ graph TD
 
 ---
 
-## 📈 Verification & Validation Metrics
+## Verification & Validation Metrics
 
 The entire pipeline has been fully executed and validated using the consolidated clinical dataset:
 - **Joint Phase Space**: 4-Dimensional ($\tau = 5, d = 2$)
@@ -61,7 +61,7 @@ The entire pipeline has been fully executed and validated using the consolidated
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 
 ```
 ├── babyface_consolidado.csv       # Clinical consolidated dataset
@@ -74,7 +74,7 @@ The entire pipeline has been fully executed and validated using the consolidated
 
 ---
 
-## 🛠️ Environment Setup & Quickstart
+## Environment Setup & Quickstart
 
 To ensure 100% stable execution and avoid package version conflicts between `giotto-tda` and newer `scikit-learn` libraries on Windows, the notebook implements dynamic environment isolation at the very top:
 
@@ -111,7 +111,7 @@ pip install giotto-tda kmapper torch scikit-learn==1.3.2 pandas numpy matplotlib
 
 ---
 
-## 📝 References & Mathematical Underpinnings
+## References & Mathematical Underpinnings
 - **Takens Embedding Theorem**: Takens, F. (1981). "Detecting strange attractors in turbulence." *Dynamical Systems and Turbulence*.
 - **Mapper Algorithm**: Singh, G., Mémoli, F., & Carlsson, G. (2007). "Topological methods for the analysis of high dimensional data sets and 3D object shapes." *Eurographics Symposium on Point-Based Graphics*.
 - **Persistence Landscapes**: Bubenik, P. (2015). "Statistical topological data analysis using persistence landscapes." *Journal of Machine Learning Research*.
